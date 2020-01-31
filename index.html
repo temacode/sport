@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Спорт</title>
+
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 455px)" href="css/style-mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 456px)" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Таймер</h1>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="control-panel">
+                <a href="#" id="start" class="btn">Запуск</a><br>
+                <a href="#" id="stop" class="btn">Пауза/Продолжить</a>
+            </div>
+            <div class="control-panel ex-list">
+                <p class="help">Предстоящие упражнения</p>
+                <ul id="exBlock"></ul>
+                <p class="help">Упражнения выполняются по 45 секунд. После каждого упражнения 15 секунд отдыха. После
+                    выполнения всех упражнений - отдых, после чего снова запускаете. Цель - 5 кругов.</p>
+            </div>
+            <div class="control-panel main-panel">
+                <p class="help">
+                    Время
+                </p>
+                <p class="lap"><span id="lap"></span></p>
+                <div class="info-panel">
+                    <p id="timer"></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="control-panel help-panel">
+                <p class="help">
+                    Пример упражнения
+                </p>
+                <p class="help" id="description"></p>
+                <div class="img">
+                    <img id="img">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="control-panel player">
+                <p class="help">Плеер</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
